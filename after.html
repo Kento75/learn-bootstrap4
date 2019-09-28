@@ -11,6 +11,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"
         integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous">
     </script>
+    <script>
+        $(function () {
+            $("#demoCarousel").carousel();
+        });
+    </script>
 
     <title>After</title>
 </head>
@@ -36,8 +41,8 @@
     <br>
     <h2>Why should I learn Bootstrap?</h2>
 
-    <div id="reasons" class="carousel slide" data-ride="carousel">
-        <ol>
+    <div id="reasons" class="carousel slide" data-ride="carousel" style="width: 900px; margin: 0 auto;">
+        <ol class="carousel-indicators">
             <li data-target="#reasons" data-slide-to="0" class="active"></li>
             <li data-target="#reasons" data-slide-to="1"></li>
             <li data-target="#reasons" data-slide-to="2"></li>
@@ -45,13 +50,26 @@
 
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <div class="carousl-caption">It's easy</div>
+                <img align="center" src="http://aljumuah.com/wp-content/uploads/2015/04/makeiteasy.jpg">
+                <div class="carousel-caption">
+                    <h3>It's Easy!</h3>
+                </div>
             </div>
             <div class="carousel-item">
-                <div class="carousl-caption">You can create beautiful websites</div>
+
+                <img align="center"
+                    src="http://re-bit.com/wp-content/uploads/2015/03/Upgrade-Your-PC-or-MacBudget-900x500.png">
+                <div class="carousel-caption">
+                    <h3>You can create beautiful websites.</h3>
+                </div>
             </div>
             <div class="carousel-item">
-                <div class="carousl-caption">Only the cool kids do it!</div>
+
+                <img align="center"
+                    src="http://modmove.com/wp-content/uploads/2015/04/Avengers_Age_of_Ultron_Movie_Review.jpg">
+                <div class="carousel-caption">
+                    <h3>All the cool kids are doing it!</h3>
+                </div>
             </div>
         </div>
         <a class="left carousel-control" href="#reasons" role="button" data-slide="prev">
